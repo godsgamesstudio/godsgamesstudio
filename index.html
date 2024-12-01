@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gods Games Studio</title>
+    <link rel="icon" type="image/png" href="./src/images/circle_logo_gg_symbol.png">
+    <!-- Importando o Tailwind CSS a partir de um CDN -->
+    <link href="./src/css/output.css" rel="stylesheet" />
+
+    <!-- Importando a fonte Poppins-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+</head>
+
+<body class="w-full m-0 p-0 font-['Poppins'] bg-slate-100">
+    <!--Cabeçalho-->
+    <header class="w-full m-0 p-0">
+        <nav class="w-full fixed top-0 left-0 bg-black border-gray-200 shadow-lg z-50">
+            <div class="w-full max-w-screen-xl mx-auto p-4 flex flex-wrap items-center justify-between">
+                <a href="#inicio" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="./src/images/circle_logo_gg_symbol.png" class="h-11 lg:h-14 xl:h-16 2xl:h-18"
+                        alt="Gods Game Icon Logo" />
+                </a>
+
+                <!-- Menu hamburguer -->
+                <button data-collapse-toggle="navbar-default" type="button"
+                    class="w-10 h-10 p-2 inline-flex items-center justify-center text-sm text-yellow-500 rounded-lg hover:bg-gray-800 md:hidden">
+                    <span class="sr-only">Open Main Menu</span>
+                    <svg class="w-5 h-5" arial-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="#eab308" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+                <!--------------------->
+                <div id="navbar-default" class="w-full hidden md:block md:w-auto">
+                    <ul
+                        class="mt-4 p-2 flex flex-col rounded-lg border border-gray-100 bg-gray-800 font-medium md:mt-0 md:p-0 md:bg-transparent md:flex-row md:space-x-8 rtl:space-x-reverse md:border-0">
+                        <li>
+                            <a href="#inicio"
+                                class="py-2 px-3 block text-white rounded hover:bg-yellow-500 md:p-0 md:bg-transparent md:hover:bg-transparent md:hover:text-yellow-500"
+                                arial-current="page">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#historia"
+                                class="py-2 px-3 block text-white rounded hover:bg-yellow-500 md:p-0 md:bg-transparent md:hover:bg-transparent md:hover:text-yellow-500"
+                                arial-current="page">História</a>
+                        </li>
+                        <li>
+                            <a href="#noticias"
+                                class="py-2 px-3 block text-white rounded hover:bg-yellow-500 md:p-0 md:bg-transparent md:hover:bg-transparent md:hover:text-yellow-500"
+                                arial-current="page">Notícias</a>
+                        </li>
+                        <li>
+                            <a href="#jogos"
+                                class="py-2 px-3 block text-white rounded hover:bg-yellow-500 md:p-0 md:bg-transparent md:hover:bg-transparent md:hover:text-yellow-500"
+                                arial-current="page">Jogos</a>
+                        </li>
+                        <li>
+                            <a href="#contato"
+                                class="py-2 px-3 block text-white rounded hover:bg-yellow-500 md:p-0 md:bg-transparent md:hover:bg-transparent md:hover:text-yellow-500"
+                                arial-current="page">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--Conteúdo principal-->
+    <main class="w-full h-auto m-0 p-0">
+        <!--Inicio-->
+        <section id="inicio" class="w-full h-auto mt-[76px] p-0 shadow-md">
+            <div class="w-full h-auto m-0 p-0">
+                <img id="banner-inicio" src="./src/images/banner2.png" class="w-full h-auto m-0 p-0" alt="Banner Here We Go">
+            </div>
+
+            <div class="w-full h-auto m-0 p-4 flex flex-wrap items-center justify-between bg-black">
+                <a href="#inicio" class="w-24 flex-none">
+                    <img src="./src/images//White_GG_LogoText.png" class="w-full lg:ms-8"
+                        alt="Gods Games Icon">
+                </a>
+                <h3
+                    class="w-64 flex-initial text-sm font-black leading-tight text-yellow-500 text-center md:w-96 md:text-lg md:pr-8 lg:text-xl lg:p-2 2xl:mr-16">
+                    "Crie memórias, desperte o jogador que existe em você!"
+                </h3>
+            </div>
+            <div class="w-full h-2 bg-yellow-500"></div>
+        </section>
+
+        <section id="historia" class="w-full h-auto mt-4 p-0 xl:max-w-5xl xl:mx-auto ">
+            <div class="w-full p-4">
+                <h1 class="text-base font-bold text-black lg:text-2xl ">História da Empresa</h1>
+                <div class="w-full h-0.5 mt-1 mb-4 bg-gray-900 rounded-sm"></div>
+                <h2 class="mb-2 text-base font-medium italic lg:text-xl">Marco 0 - A Covergência Dos Deuses</h2>
+                <p class="text-base text-gray-900 font-extralight text-justify tracking-wide leading-relaxed lg:text-xl">
+                    Em 2024, a Gods Games surgiu da união de três amigos –
+                    <span
+                        class="text-base text-yellow-500 font-semibold text-justify tracking-wide leading-relaxed lg:text-xl">Falbet,
+                        NaTT e Nogueira</span> – durante uma
+                    intensa competição de desenvolvimento de jogos chamada Game Jam. Assim como os deuses uma vez se
+                    reuniram no Monte Olimpo para forjar novos destinos, três amigos com um sonho em comum, uniram
+                    forças para transformar ideias em experiências inesquecíveis.
+                </p>
+            </div>
+            <div class="w-full p-4">
+                <h2 class="mb-2 text-base font-medium italic text-end lg:text-xl">Marco 1 - A Forja Do Nome Divino</h2>
+                <p class="text-base text-gray-900 font-extralight text-justify tracking-wide leading-relaxed lg:text-xl">
+                    Inspirados pela mitologia grega, decidimos que o nome
+                    da empresa refletiria nossa identidade única. Assim, escolhemos
+                    <span
+                        class="text-base text-yellow-500 font-semibold text-justify tracking-wide leading-relaxed lg:text-xl">“Gods
+                        Games”</span>
+                    como uma homenagem ao nosso grupo de jogos online, onde todos os nicknames começam com o prefixo
+                    “God”.
+                    Essa escolha simboliza a conexão com referências divinas e os elementos da mitologia grega, que
+                    permeiam nossa identidade visual, conferindo-lhes uma essência épica.
+                </p>
+            </div>
+            <div class="w-full p-4">
+                <h2 class="mb-2 text-base font-medium italic lg:text-xl">Marco 2 - A Ascensão Dos Novos Deuses</h2>
+                <p class="text-base text-gray-900 font-extralight text-justify tracking-wide leading-relaxed lg:text-xl">
+                    Encerrando um ciclo, a Gods Games se fortaleceu com a
+                    chegada de dois novos fundadores, <span
+                        class="text-base text-yellow-500 font-semibold text-justify tracking-wide leading-relaxed lg:text-xl">
+                        Dionizio e Anny.</span>
+                    Assim como os novos deuses que enriquecem um panteão, eles trouxeram habilidades valiosas e novas
+                    perspectivas. Juntos, formamos uma equipe
+                    determinada e comprometida em criar experiências de jogo dignas dos mais grandiosos mitos.
+                </p>
+            </div>
+            <div class="w-full p-4 md:w-5/6 md:mx-auto">
+                <div class="w-full p-4 bg-yellow-500 rounded-tl-lg rounded-tr-lg flex">
+                    <h1 class="font-bold text-base leading-tight lg:text-xl">Missão</h1>
+                    <div class="w-full h-1 mt-2.5 ms-1 bg-black rounded lg:mt-3.5"></div>
+                </div>
+                <div class="w-full p-4 bg-gray-900  rounded-bl-lg rounded-br-lg shadow-lg">
+                    <p class="font-bold text-white text-center leading-tight text-base lg:text-xl">
+                        “Criar
+                        experiências
+                        unicas, divertidas e inesqueciveis para o jogador que habita em você.”
+                    </p>
+                </div>
+                <p class="mt-2.5 p-1 text-center italic font-semibold text-base leading-relaxed lg:text-xl xl:mb-4 xl:mt-4">
+                    "Assim como Hefesto
+                    moldava o Olimpo com suas criações, a Gods Games está comprometida em criar jogos
+                    únicos e memoráveis, despertando a grandiosidade que vive em cada jogador".</p>
+            </div>
+            <div class="w-full p-4 m-0 flex bg-slate-900 xl:rounded-tl-lg rounded-tr-lg">
+                <div class="w-full h-1 mt-2 me-1 bg-white rounded lg:mt-3"></div>
+                <h1 class="font-bold leading-tight text-base text-white lg:text-xl">Valores</h1>
+            </div>
+            <div class="w-full ps-4 pb-4 pt-2 bg-slate-900 rounded-bl-lg rounded-br-lg ">
+                <h3 class="font-semibold text-center text-yellow-500 leading-tight text-base lg:text-xl">
+                    Criatividade</h3>
+                <p class="mb-2 pt-2 pe-4 text-center text-base text-white lg:text-xl">
+                    Assim como Atena, a deusa da
+                    sabedoria e das artes, valorizamos o poder da criatividade para inovar e desafiar o comum, trazendo
+                    novas ideias e perspectivas.</p>
+                <h3 class="pe-4 font-semibold text-center text-yellow-500 leading-tight text-base lg:text-xl">Paixão</h3>
+                <p class="mb-2 pt-2 pe-4 text-center text-base text-white lg:text-xl">
+                    Inspirados pela energia vibrante de
+                    Dionísio, deus do êxtase e da celebração, buscamos criar jogos que envolvam, inspirem e tragam
+                    diversão a cada momento.</p>
+                <h3 class="font-semibold text-center text-yellow-500 leading-tight text-base lg:text-xl">
+                    Compromisso</h3>
+                <p class="mb-2 pt-2 pe-4 text-center text-base text-white lg:text-xl">
+                    Como Prometeu, que trouxe o fogo à
+                    humanidade, nos comprometemos com o progresso e a dedicação inabalável, entregando jogos e
+                    proporcionando experiências memoraveis.</p>
+                <h3 class="pe-4 font-semibold text-center text-yellow-500 leading-tight text-base lg:text-xl">Inclusão</h3>
+                <p class="pt-2 pb-2 pe-4 text-center leading-tight text-base text-white lg:text-xl">
+                    Hermes, o mensageiro que conecta deuses
+                    e mortais, nos inspira a valorizar cada jogador.</p>
+            </div>
+            <div class="w-full h-auto mt-4 ps-4 pe-4 flex">
+                <div class="w-2/5 h-1 mt-3 me-2 bg-gray-900 rounded md:w-3/5"></div>
+                <h1 class="font-bold text-center text-base text-gray-900 md:text-lg lg:text-xl">Equipe</h1>
+                <div class="w-2/5 h-1 mt-3 ms-2 bg-gray-900 rounded md:w-3/5"></div>
+            </div>
+
+            <!-- Carrossel de Equipe -->
+            <div class="relative w-full h-auto p-4">
+                <!-- Slideshow container -->
+                <div class="carousel relative w-full overflow-hidden">
+                    <div class="carousel-inner relative w-full overflow-hidden grid grid-cols-1 md:grid-cols-2">
+                        <!-- Slide 1 -->
+                        <div class="carousel-item active w-full h-auto">
+                            <div class="w-1/2 mx-auto bg-slate-900 rounded-tl-lg rounded-tr-lg shadow-lg">
+                                <h3
+                                    class="p-2 text-center text-base text-yellow-500 font-semibold underline underline-offset-2 lg:text-xl">
+                                    Divindade</h3>
+                            </div>
+                            <div class="w-1/2 mx-auto">
+                                <img onclick="loadModal('falbet')" class="w-full border-4 border-gray-900"
+                                    src="./src/images/avatar-jalison.png" alt="avatar FalbeT">
+                            </div>
+                            <div class="w-1/2 mx-auto bg-slate-900 rounded-bl-lg rounded-br-lg shadow-lg">
+                                <h3 class="p-2 text-center text-base text-yellow-500 font-semibold lg:text-xl">FalbeT</h3>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="carousel-item w-full h-auto">
+                            <div class="w-1/2 mx-auto bg-slate-900 rounded-tl-lg rounded-tr-lg shadow-lg">
+                                <h3
+                                    class="p-2 text-center text-base text-yellow-500 font-semibold underline underline-offset-2 lg:text-xl">
+                                    Divindade</h3>
+                            </div>
+                            <div class="w-1/2 mx-auto">
+                                <img onclick="loadModal('natt')" class="w-full border-4 border-gray-900"
+                                    src="./src/images/avatar-natt.png" alt="avatar NaTT">
+                            </div>
+                            <div class="w-1/2 mx-auto bg-slate-900 rounded-bl-lg rounded-br-lg shadow-lg">
+                                <h3 class="p-2 text-center text-base text-yellow-500 font-semibold lg:text-xl">NaTT</h3>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="carousel-item w-full h-auto">
+                            <div class="w-1/2 mx-auto bg-slate-900 rounded-tl-lg rounded-tr-lg shadow-lg">
+                                <h3
+                                    class="p-2 text-center text-base text-yellow-500 font-semibold underline underline-offset-2 lg:text-xl">
+                                    Divindade</h3>
+                            </div>
+                            <div class="w-1/2 mx-auto">
+                                <img onclick="loadModal('nogueira')" class="w-full border-4 border-gray-900"
+                                    src="./src/images/avatar-keven.png" alt="avatar Nogueira">
+                            </div>
+                            <div class="w-1/2 mx-auto bg-slate-900 rounded-bl-lg rounded-br-lg shadow-lg">
+                                <h3 class="p-2 text-center text-base text-yellow-500 font-semibold lg:text-xl">Nogueira</h3>
+                            </div>
+                        </div>
+                        <!-- Slide 4 -->
+                        <div class="carousel-item w-full h-auto">
+                            <div class="w-1/2 mx-auto bg-slate-900 rounded-tl-lg rounded-tr-lg shadow-lg">
+                                <h3
+                                    class="p-2 text-center text-base text-yellow-500 font-semibold underline underline-offset-2 lg:text-xl">
+                                    Divindade</h3>
+                            </div>
+                            <div class="w-1/2 mx-auto">
+                                <img onclick="loadModal('anny')" class="w-full border-4 border-gray-900"
+                                    src="./src/images/avatar-anny.png" alt="avatar Anny">
+                            </div>
+                            <div class="w-1/2 mx-auto bg-slate-900 rounded-bl-lg rounded-br-lg shadow-lg">
+                                <h3 class="p-2 text-center text-base text-yellow-500 font-semibold lg:text-xl">Anny</h3>
+                            </div>
+                        </div>
+                        <!-- Slide 5 -->
+                        <div class="carousel-item w-full h-auto">
+                            <div class="w-1/2 mx-auto bg-slate-900 rounded-tl-lg rounded-tr-lg shadow-lg">
+                                <h3
+                                    class="p-2 text-center text-base text-yellow-500 font-semibold underline underline-offset-2 lg:text-xl">
+                                    Divindade</h3>
+                            </div>
+                            <div class="w-1/2 mx-auto">
+                                <img onclick="loadModal('dionizio')" class="w-full border-4 border-gray-900"
+                                    src="./src/images/dionizio_avatar.png" alt="avatar Dionizio">
+                            </div>
+                            <div class="w-1/2 mx-auto bg-slate-900 rounded-bl-lg rounded-br-lg shadow-lg">
+                                <h3 class="p-2 text-center text-base text-yellow-500 font-semibold lg:text-xl">Dionizio</h3>
+                            </div>
+                        </div>
+                        <!-- Slide 6 -->
+                        <div class="carousel-item w-full h-auto">
+                            <div class="w-1/2 mx-auto bg-slate-900 rounded-tl-lg rounded-tr-lg shadow-lg">
+                                <h3
+                                    class="p-2 text-center text-base text-yellow-500 font-semibold underline underline-offset-2 lg:text-xl">
+                                    Semi-Divindade</h3>
+                            </div>
+                            <div class="w-1/2 mx-auto">
+                                <img onclick="loadModal('aoki')" class="w-full border-4 border-gray-900"
+                                    src="./src/images/Aoki.png" alt="avatar Aoki">
+                            </div>
+                            <div class="w-1/2 mx-auto bg-slate-900 rounded-bl-lg rounded-br-lg shadow-lg">
+                                <h3 class="p-2 text-center text-base text-yellow-500 font-semibold lg:text-xl">Aoki</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Controle do Carrossel -->
+                    <button id="btn-back"
+                        class="absolute top-1/2 left-4 transform -translate-y-1/2 text-white bg-gray-900 p-2 rounded-full hover:bg-yellow-500 z-10"
+                        onclick="prevSlide()">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button id="btn-next"
+                        class="absolute top-1/2 right-4 transform -translate-y-1/2 text-white bg-gray-900 p-2 rounded-full hover:bg-yellow-500 z-10"
+                        onclick="nextSlide()">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!--Noticias-->
+        <section id="noticias" class="w-full h-auto mt-4 pb-4 xl:max-w-5xl xl:mx-auto">
+            <div class="w-full h-auto ps-4 pe-4 pt-2">
+                <div class="w-full h-auto m-0 p-4 flex bg-gray-900 rounded-tl-lg rounded-tr-lg">
+                    <h1 class="text-base font-bold text-yellow-500 lg:text-xl">Notícias</h1>
+                    <div class="w-full h-0.5 mt-3 ms-2 bg-yellow-500 rounded-sm lg:mt-3.5"></div>
+                </div>
+                <div class="w-full h-auto m-0 pt-2 ps-4 pe-4 pb-4 bg-slate-50 rounded-bl-lg rounded-br-lg shadow-lg">
+                    <h2 class="mb-2 text-base font-semibold text-center italic underline lg:text-xl">Destaques</h2>
+                    <p class="text-base text-gray-900 font-extralight text-justify tracking-wide leading-relaxed lg:text-xl">
+                        A Gods Games está prestes a levar vocês a uma experiência emocionante e divertida com <span
+                            class="font-semibold lg:text-xl">Here We Go!</span>
+                        Neste jogo topdown cheio de charme e desafios, você acompanhará Lionel Shawn, um dedicado
+                        condutor de riquixá que acabou de se mudar para
+                        a pitoresca cidade de Jiajun, na China.
+                    </p>
+                    <div class="w-full h-px mt-4 mb-4 bg-gradient-to-r from-gray-50 to-gray-900"></div>
+                    <p class="text-base text-gray-900 font-extralight text-justify tracking-wide leading-relaxed lg:text-xl">
+                        Com uma história envolvente e repleta de segredos e surpresas, Lionel está determinado a
+                        conquista sua casa dos sonhos, enfrentando obstáculos
+                        e conhecendo personagens marcantes pelo caminho. <span class="font-semibold lg:text-xl">Você está pronto
+                            para correr nas agitadas ruas de Jiajun?</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="jogos" class="w-full h-auto mt-4 pb-4 xl:max-w-5xl xl:mx-auto ">
+            <div class="w-full p-4 bg-gray-900 xl:rounded-tl-lg xl:rounded-tr-lg">
+                <h1 class="text-base font-bold text-yellow-500 lg:text-xl">Jogos</h1>
+                <div class="w-full h-1 mt-1 bg-yellow-500 rounded"></div>
+            </div>
+            <div class="w-full h-auto ps-4 bg-gray-900">
+                <h2 class="text-start text-sm font-light text-white lg:text-xl">Em desenvolvimento...</h2>
+            </div>
+            <div class="relative w-full h-auto ps-4 pe-4 pt-2 pb-4 bg-gray-900">
+                <img src="src/images/here_we_go_banner.png"
+                    class="w-full h-auto object-cover rounded-md shadow-lg border-4 border-yellow-500"
+                    alt="imagem jogo">
+                <div class="absolute inset-0 bg-gradient-to-t from-gray-900 opacity-60"></div>
+                <div class="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900 opacity-40"></div>
+            </div>
+            <div class="w-full h-auto p-2 bg-gray-900 xl:rounded-bl-lg xl:rounded-br-lg">
+                <h2 class="text-center text-base font-semibold text-yellow-500 underline underline-offset-2 lg:text-xl">Here We Go!
+                </h2>
+                <p class="mt-3 mb-3 text-center text-white text-base font-light lg:text-xl">Prepare-se para uma aventura épica com
+                    Lionel e seu riquixá
+                    nas agitadas ruas da China!
+            </div>
+        </section>
+
+        <section id="contato" class="w-full h-auto mt-8 pb-4">
+            <div class="px-6 flex items-center justify-center z-10 text-center text-white ">
+                <h1 class="ms-8 text-4xl font-extrabold tracking-tight text-gray-900 text-center md:me-4">Entre em Contato</h1>
+                <img src="./src/images/circle_logo_gg_symbol.png" class="h-28 me-8" alt="Gods Game Icon Logo" />
+            </div>
+
+            <div class="w-full mt-8 p-4 text-center bg-gray-900 xl:max-w-5xl xl:mx-auto xl:rounded-lg">
+                <h2 class="text-xl font-bold text-yellow-500 lg:text-xl">Nos envie uma mensagem</h2>
+                <p class="mt-2 text-base font-light text-gray-50 lg:text-xl">Fique à vontade para tirar dúvidas ou sugerir novas
+                    ideias para os nossos jogos.</p>
+            </div>
+            <div class="w-full h-auto p-4 xl:max-w-5xl xl:mx-auto">
+                <div class="w-full p-8 bg-white rounded-xl shadow-lg transform hover:scale-105 transition duration-300">
+                    <form id="contact-form" method="POST" class="space-y-6">
+                        <!-- Nome -->
+                        <div class="flex flex-col md:flex-row md:space-x-6">
+                            <div class="flex-1">
+                                <label for="name" class="block text-lg font-medium text-gray-900 lg:text-xl">Seu Nome</label>
+                                <input type="text" id="name" name="name"
+                                    class="mt-2 mb-2 w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                                    placeholder="Digite seu nome" required>
+                            </div>
+                            <div class="flex-1">
+                                <label for="email" class="block text-lg font-medium text-gray-900 lg:text-xl">Seu E-mail</label>
+                                <input type="email" id="email" name="email"
+                                    class="mt-2 mb-2 w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                                    placeholder="Digite seu e-mail" required>
+                            </div>
+                        </div>
+
+                        <!-- Assunto -->
+                        <div>
+                            <label for="subject" class="block text-lg font-medium text-gray-900 lg:text-xl">Assunto</label>
+                            <input type="text" id="subject" name="subject"
+                                class="mt-2 mb-2 w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                                placeholder="Qual é o assunto?" required>
+                        </div>
+
+                        <!-- Mensagem -->
+                        <div>
+                            <label for="message" class="block text-lg font-medium text-gray-900 lg:text-xl">Mensagem</label>
+                            <textarea id="message" name="message" rows="6"
+                                class="mt-2 w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                                placeholder="Escreva sua mensagem..." required></textarea>
+                        </div>
+
+                        <!-- Botão de Enviar -->
+                        <div>
+                            <button type="submit" 
+                                class="w-full py-3 px-6 bg-yellow-500 hover:bg-yellow-600 text-white font-semibold rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 transition duration-300 lg:text-xl">
+                                Enviar Mensagem
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="w-full mx-auto text-center">
+                <p class="mt-4 text-md lg:text-xl">Siga-nos nas redes sociais e fique por dentro das novidades!</p>
+                <div class="mt-4 flex justify-center space-x-6">
+                    <!--<a href="#" class="text-2xl hover:text-yellow-500"><i class="fab fa-facebook"></i></a>-->
+                    <a href="#" class="text-2xl hover:text-yellow-500"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/godsgamesstudio?igsh=MWJoanptZ2NnY3NzZw=="
+                        class="text-2xl hover:text-yellow-500"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!--alert-->
+        <div id="custom-alert" class="p-4 fixed inset-0 items-center justify-center bg-black bg-opacity-50 hidden">
+            <div class="bg-white p-6 rounded-lg shadow-lg max-w-md w-full text-center relative">
+                <!-- Botão de Fechar (X) posicionado no canto superior direito -->
+                <button id="close-alert" class="pr-4 absolute top-2 right-2 text-xl font-semibold text-gray-500 hover:text-gray-700">x</button>
+        
+                <!-- Mensagem do Alerta -->
+                <span id="alert-message" class="text-lg font-semibold text-gray-800 lg:text-xl">Mensagem enviada com sucesso!</span>
+            </div>
+        </div>
+
+        <footer class="w-full p-0 mt-8">
+            <div class="w-full bg-black p-4 text-center">
+                <p class="text-white text-sm">© 2024 Gods Games. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="./src/js/script.js"></script>
+    <script src="./src/js/sendEmail.js"></script>
+</body>
+
+</html>
